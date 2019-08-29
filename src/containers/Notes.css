@@ -1,0 +1,14 @@
+.Notes {
+  padding: 120px 0 0 0;
+}
+
+.Notes form {
+  margin: 0 auto;
+  max-width: 320px;
+  padding-bottom: 15px;
+}
+
+.Notes form textarea {
+  width: 100%;
+  font-size: 24px;
+}
