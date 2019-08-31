@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "predeploy": "REACT_APP_STAGE=prod npm run build",
     "deploy": "aws s3 sync build/ s3://notes-app-client-vbs34tgb --delete",
     "postdeploy": "aws cloudfront create-invalidation --distribution-id E209CQKKGOXN6M --paths '/*' && aws cloudfront create-invalidation --distribution-id EIPUSU4PD2VXV --paths '/*'",
     "test": "react-scripts test",
