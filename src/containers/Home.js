@@ -13,12 +13,11 @@ import './Home.css';
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
-    maxWidth: '280px',
+    'max-width': '280px',
     'max-height': '100vh',
-    'display': 'flex',
+    display: 'flex',
     'flex-direction': 'column',
     'flex-wrap': 'wrap',
-    backgroundColor: theme.palette.background.paper,
   },
   card: {
     margin: '12px',
@@ -93,7 +92,7 @@ function Home(props) {
   const renderNotes = () => (
     <div className="notes">
       <h1>Your Notes...</h1>
-      <List component="nav" className={classes.root}>
+      <List component="nav" className="notes-container">
         {!isLoading && renderNotesList(notes)}
       </List>
     </div>

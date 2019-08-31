@@ -21,3 +21,24 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
+
+.Home .notes-container {
+  width: 100%;
+  max-width: 280px;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 480px) {
+  .Home .notes {
+    padding: 60px 20px;
+    text-align: left;
+  }
+
+  .Home .notes-container {
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+}
