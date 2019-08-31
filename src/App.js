@@ -17,6 +17,9 @@ const useStyles = makeStyles(theme => ({
     body: {
       backgroundColor: theme.palette.common.white,
     },
+    '*': {
+      'box-sizing': 'content-box'
+    },
     ul: {
       margin: 0,
       padding: 0,
